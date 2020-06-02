@@ -1,10 +1,10 @@
 ---
-:concurrency: 5
+:concurrency: 1
 :queues:
-  - [default, 6]
-  - [push, 4]
-  - [mailers, 2]
-  - [pull]
+  - [default, 8]
+  - [push, 8]
+  - [mailers, 8]
+  - [pull, 25]
 :schedule:
   scheduled_statuses_scheduler:
     every: '5m'
