@@ -7,9 +7,9 @@ Type=simple
 User=mastodon
 WorkingDirectory=/home/mastodon/live
 Environment="RAILS_ENV=production"
-Environment="DB_POOL=50"
+Environment="DB_POOL=80"
 Environment="MALLOC_ARENA_MAX=2"
-ExecStart=/home/mastodon/.rbenv/shims/bundle exec sidekiq -c 50
+ExecStart=/home/mastodon/.rbenv/shims/bundle exec sidekiq -c 80
 TimeoutSec=15
 Restart=always
 
