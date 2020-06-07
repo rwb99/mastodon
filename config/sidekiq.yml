@@ -1,5 +1,5 @@
 ---
-:concurrency: 15
+:concurrency: 50
 :queues:
   - [pull, 50]
   - [default, 10]
