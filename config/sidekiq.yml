@@ -1,16 +1,16 @@
 ---
 :concurrency: 15
 :queues:
-  - [pull, 25]
-  - [default, 8]
-  - [push, 8]
-  - [mailers, 8]
+  - [pull, 50]
+  - [default, 10]
+  - [push, 10]
+  - [mailers, 10]
 :schedule:
   scheduled_statuses_scheduler:
-    every: '5m'
+    every: '1m'
     class: Scheduler::ScheduledStatusesScheduler
   trending_tags_scheduler:
-    every: '5m'
+    every: '1m'
     class: Scheduler::TrendingTagsScheduler
   media_cleanup_scheduler:
     cron: '<%= Random.rand(0..59) %> <%= Random.rand(3..5) %> * * *'
